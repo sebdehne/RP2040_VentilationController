@@ -1,19 +1,13 @@
 #include <Arduino.h>
 #include <SPI.h>
-
-// put function declarations here:
-int myFunction(int, int);
+#include "dac_dfr0971.h"
+#include "SmartHomeServerClientWifi.h"
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  DacDfr0971.setup();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  SmartHomeServerClientWifi.run();
 }
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
-}
