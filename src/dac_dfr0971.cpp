@@ -23,6 +23,7 @@ void DacDfr0971Class::setup()
         {
             break;
         }
+        
         Log.log("init error Dac Dfr0971");
         delay(1000);
     }

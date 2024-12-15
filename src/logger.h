@@ -2,7 +2,7 @@
 #define _LOGGER_H
 
 #include <Arduino.h>
-
+#include "config.h"
 
 class Logger
 {
